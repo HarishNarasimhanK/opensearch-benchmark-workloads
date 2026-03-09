@@ -4,9 +4,8 @@
   "default": true,
   "schedule": [
     {% with default_index_settings={}, index_name="clickbench" %}
-    {{ benchmark.collect(parts="../../common_operations/workload_setup.json") }},
+    {{ benchmark.collect(parts="../../common_operations/workload_setup.json") }}
     {% endwith %}
-    {{ benchmark.collect(parts="ppl/clickbench-schedule.json") }}
   ]
 },
 {
