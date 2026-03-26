@@ -7,8 +7,10 @@
     "index.codec": "best_compression",
     "index.translog.sync_interval": "30s",
     "index.translog.durability": {{index_translog_durability | default("async") | tojson}},
+    "refresh_interval": "60s",
     "index.sort.field": [ "CounterID", "EventDate", "UserID", "EventTime", "WatchID" ],
-    "index.sort.order": [ "desc", "desc", "desc", "desc", "desc" ]
+    "index.sort.order": [ "desc", "desc", "desc", "desc", "desc" ],
+    "optimized.enabled": true
   },
   "mappings": {
     "dynamic": "false",
