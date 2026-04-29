@@ -9,7 +9,11 @@
     "refresh_interval": "60s",
     "index.sort.field": [ "CounterID", "EventDate", "UserID", "EventTime", "WatchID" ],
     "index.sort.order": [ "desc", "desc", "desc", "desc", "desc" ],
-    "optimized.enabled": true
+    "optimized.enabled": true,
+    "index.pluggable.dataformat.enabled": true,
+    "index.pluggable.dataformat": "composite",
+    "index.composite.primary_data_format": "parquet",
+    "index.composite.secondary_data_formats": []
   },
   "mappings": {
     "dynamic": "false",
