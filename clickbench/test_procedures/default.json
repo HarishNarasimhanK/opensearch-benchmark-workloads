@@ -46,7 +46,7 @@
   "description": "Indexes the ClickBench dataset and runs OpenSearch PPL queries to benchmark analytical use case performance. Specific to the datafusion branch.",
   "default": false,
   "schedule": [
-    {% with default_index_settings={}, index_name="clickbench" %}
+    {% with default_index_settings={"index.pluggable.dataformat.enabled": true, "index.pluggable.dataformat": "composite", "index.composite.primary_data_format": "parquet", "index.composite.secondary_data_formats": []}, index_name="clickbench" %}
     {{ benchmark.collect(parts="../../common_operations/delete_index.json") }},
     {{ benchmark.collect(parts="../../common_operations/create_index.json") }},
     {{ benchmark.collect(parts="../../common_operations/check_cluster_health.json") }},
