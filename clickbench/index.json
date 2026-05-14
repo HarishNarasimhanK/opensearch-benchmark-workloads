@@ -2,13 +2,8 @@
   "settings": {
     "index.number_of_shards": {{number_of_shards | default(1)}},
     "index.number_of_replicas": {{number_of_replicas | default(0)}},
-    "index.pluggable.dataformat.enabled": true,
-    "index.pluggable.dataformat": "composite",
-    "index.composite.primary_data_format": "parquet",
-    "index.composite.secondary_data_formats": ["lucene"],
-    "index.refresh_interval": "60s",
-    "index.parquet.bloom_filter_enabled": false
-
+    "index.pluggable.dataformat.enabled": false,
+    "index.refresh_interval": "60s"
   },
   "mappings": {
     "dynamic": "false",

@@ -24,7 +24,7 @@
   "description": "Indexes the whole document corpus using OpenSearch default settings and runs DSL (Domain-Specific Language) queries. The DSL queries were converted from PPL via OpenSearch's _plugins/_sql/_explain API.",
   "default": false,
   "schedule": [
-    {% with default_index_settings={}, index_name="clickbench" %}
+    {% with default_index_settings={"index.number_of_shards": 1, "index.number_of_replicas": 0, "index.pluggable.dataformat.enabled": false, "index.refresh_interval": "60s"}, index_name="clickbench" %}
     {{ benchmark.collect(parts="../../common_operations/workload_setup.json") }},
     {% endwith %}
     {{ benchmark.collect(parts="dsl/dsl-clickbench-schedule.json") }}
