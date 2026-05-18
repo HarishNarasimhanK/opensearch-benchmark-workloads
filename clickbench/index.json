@@ -239,7 +239,7 @@
         "type": "short"
       },
       "SearchPhrase": {
-        "type": "keyword"
+        "type": "text"
       },
       "SendTiming": {
         "type": "integer"
@@ -266,7 +266,7 @@
         "type": "keyword"
       },
       "Title": {
-        "type": "keyword"
+        "type": "text"
       },
       "TraficSourceID": {
         "type": "short"
