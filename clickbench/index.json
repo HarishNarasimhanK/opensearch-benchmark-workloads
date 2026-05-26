@@ -6,7 +6,7 @@
     "index.pluggable.dataformat": "composite",
     "index.composite.primary_data_format": "parquet",
     "index.composite.secondary_data_formats": [],
-    "index.refresh_interval": "60s",
+    "index.refresh_interval": "10s",
     "index.parquet.bloom_filter_enabled": false
   },
   "mappings": {
