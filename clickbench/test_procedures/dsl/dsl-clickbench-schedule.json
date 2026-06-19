@@ -291,4 +291,298 @@
   "iterations": {{ dsl_q43_hourly_pageviews_iterations or test_iterations | default(100) | tojson }},
   "target-throughput": {{ dsl_q43_hourly_pageviews_target_throughput or target_throughput | default(2) | tojson }},
   "clients": {{ dsl_q43_hourly_pageviews_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q01-count-all",
+  "warmup-iterations": {{ delegation_q01_count_all_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q01_count_all_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q01_count_all_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q01_count_all_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q02-count-adv-engine",
+  "warmup-iterations": {{ delegation_q02_count_adv_engine_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q02_count_adv_engine_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q02_count_adv_engine_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q02_count_adv_engine_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q03-sum-count-avg",
+  "warmup-iterations": {{ delegation_q03_sum_count_avg_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q03_sum_count_avg_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q03_sum_count_avg_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q03_sum_count_avg_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q04-avg-userid",
+  "warmup-iterations": {{ delegation_q04_avg_userid_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q04_avg_userid_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q04_avg_userid_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q04_avg_userid_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q05-distinct-userid",
+  "warmup-iterations": {{ delegation_q05_distinct_userid_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q05_distinct_userid_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q05_distinct_userid_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q05_distinct_userid_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q06-distinct-searchphrase",
+  "warmup-iterations": {{ delegation_q06_distinct_searchphrase_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q06_distinct_searchphrase_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q06_distinct_searchphrase_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q06_distinct_searchphrase_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q07-min-max-eventdate",
+  "warmup-iterations": {{ delegation_q07_min_max_eventdate_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q07_min_max_eventdate_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q07_min_max_eventdate_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q07_min_max_eventdate_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q08-group-by-adv-engine",
+  "warmup-iterations": {{ delegation_q08_group_by_adv_engine_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q08_group_by_adv_engine_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q08_group_by_adv_engine_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q08_group_by_adv_engine_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q09-region-users",
+  "warmup-iterations": {{ delegation_q09_region_users_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q09_region_users_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q09_region_users_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q09_region_users_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q10-region-stats",
+  "warmup-iterations": {{ delegation_q10_region_stats_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q10_region_stats_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q10_region_stats_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q10_region_stats_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q11-mobile-phone-model",
+  "warmup-iterations": {{ delegation_q11_mobile_phone_model_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q11_mobile_phone_model_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q11_mobile_phone_model_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q11_mobile_phone_model_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q12-mobile-phone-stats",
+  "warmup-iterations": {{ delegation_q12_mobile_phone_stats_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q12_mobile_phone_stats_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q12_mobile_phone_stats_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q12_mobile_phone_stats_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q13-search-phrase-count",
+  "warmup-iterations": {{ delegation_q13_search_phrase_count_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q13_search_phrase_count_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q13_search_phrase_count_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q13_search_phrase_count_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q14-search-phrase-users",
+  "warmup-iterations": {{ delegation_q14_search_phrase_users_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q14_search_phrase_users_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q14_search_phrase_users_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q14_search_phrase_users_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q15-search-engine-phrase",
+  "warmup-iterations": {{ delegation_q15_search_engine_phrase_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q15_search_engine_phrase_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q15_search_engine_phrase_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q15_search_engine_phrase_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q16-user-activity",
+  "warmup-iterations": {{ delegation_q16_user_activity_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q16_user_activity_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q16_user_activity_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q16_user_activity_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q17-user-search-activity",
+  "warmup-iterations": {{ delegation_q17_user_search_activity_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q17_user_search_activity_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q17_user_search_activity_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q17_user_search_activity_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q18-user-search-limit",
+  "warmup-iterations": {{ delegation_q18_user_search_limit_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q18_user_search_limit_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q18_user_search_limit_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q18_user_search_limit_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q19-user-minute-search",
+  "warmup-iterations": {{ delegation_q19_user_minute_search_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q19_user_minute_search_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q19_user_minute_search_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q19_user_minute_search_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q20-specific-user",
+  "warmup-iterations": {{ delegation_q20_specific_user_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q20_specific_user_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q20_specific_user_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q20_specific_user_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q21-google-urls",
+  "warmup-iterations": {{ delegation_q21_google_urls_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q21_google_urls_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q21_google_urls_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q21_google_urls_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q22-google-search-phrases",
+  "warmup-iterations": {{ delegation_q22_google_search_phrases_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q22_google_search_phrases_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q22_google_search_phrases_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q22_google_search_phrases_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q23-google-title-search",
+  "warmup-iterations": {{ delegation_q23_google_title_search_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q23_google_title_search_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q23_google_title_search_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q23_google_title_search_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q24-google-urls-sorted",
+  "warmup-iterations": {{ delegation_q24_google_urls_sorted_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q24_google_urls_sorted_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q24_google_urls_sorted_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q24_google_urls_sorted_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q25-search-phrases-by-time",
+  "warmup-iterations": {{ delegation_q25_search_phrases_by_time_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q25_search_phrases_by_time_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q25_search_phrases_by_time_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q25_search_phrases_by_time_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q26-search-phrases-sorted",
+  "warmup-iterations": {{ delegation_q26_search_phrases_sorted_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q26_search_phrases_sorted_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q26_search_phrases_sorted_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q26_search_phrases_sorted_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q27-search-phrases-multi-sort",
+  "warmup-iterations": {{ delegation_q27_search_phrases_multi_sort_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q27_search_phrases_multi_sort_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q27_search_phrases_multi_sort_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q27_search_phrases_multi_sort_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q28-counter-url-length",
+  "warmup-iterations": {{ delegation_q28_counter_url_length_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q28_counter_url_length_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q28_counter_url_length_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q28_counter_url_length_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q30-resolution-width-sums",
+  "warmup-iterations": {{ delegation_q30_resolution_width_sums_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q30_resolution_width_sums_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q30_resolution_width_sums_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q30_resolution_width_sums_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q31-search-engine-client-stats",
+  "warmup-iterations": {{ delegation_q31_search_engine_client_stats_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q31_search_engine_client_stats_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q31_search_engine_client_stats_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q31_search_engine_client_stats_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q32-watch-client-stats",
+  "warmup-iterations": {{ delegation_q32_watch_client_stats_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q32_watch_client_stats_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q32_watch_client_stats_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q32_watch_client_stats_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q33-watch-client-all",
+  "warmup-iterations": {{ delegation_q33_watch_client_all_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q33_watch_client_all_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q33_watch_client_all_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q33_watch_client_all_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q34-url-popularity",
+  "warmup-iterations": {{ delegation_q34_url_popularity_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q34_url_popularity_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q34_url_popularity_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q34_url_popularity_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q35-url-with-constant",
+  "warmup-iterations": {{ delegation_q35_url_with_constant_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q35_url_with_constant_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q35_url_with_constant_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q35_url_with_constant_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q36-client-ip-variations",
+  "warmup-iterations": {{ delegation_q36_client_ip_variations_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q36_client_ip_variations_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q36_client_ip_variations_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q36_client_ip_variations_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q37-counter-62-urls",
+  "warmup-iterations": {{ delegation_q37_counter_62_urls_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q37_counter_62_urls_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q37_counter_62_urls_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q37_counter_62_urls_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q38-counter-62-titles",
+  "warmup-iterations": {{ delegation_q38_counter_62_titles_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q38_counter_62_titles_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q38_counter_62_titles_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q38_counter_62_titles_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q39-counter-62-links",
+  "warmup-iterations": {{ delegation_q39_counter_62_links_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q39_counter_62_links_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q39_counter_62_links_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q39_counter_62_links_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q40-traffic-source-analysis",
+  "warmup-iterations": {{ delegation_q40_traffic_source_analysis_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q40_traffic_source_analysis_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q40_traffic_source_analysis_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q40_traffic_source_analysis_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q41-url-hash-date",
+  "warmup-iterations": {{ delegation_q41_url_hash_date_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q41_url_hash_date_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q41_url_hash_date_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q41_url_hash_date_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q42-window-client-dimensions",
+  "warmup-iterations": {{ delegation_q42_window_client_dimensions_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q42_window_client_dimensions_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q42_window_client_dimensions_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q42_window_client_dimensions_clients or search_clients | default(1) }}
+},
+{
+  "operation": "delegation-q43-hourly-pageviews",
+  "warmup-iterations": {{ delegation_q43_hourly_pageviews_warmup_iterations or warmup_iterations | default(100) | tojson }},
+  "iterations": {{ delegation_q43_hourly_pageviews_iterations or test_iterations | default(100) | tojson }},
+  "target-throughput": {{ delegation_q43_hourly_pageviews_target_throughput or target_throughput | default(2) | tojson }},
+  "clients": {{ delegation_q43_hourly_pageviews_clients or search_clients | default(1) }}
 }
